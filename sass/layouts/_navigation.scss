@@ -16,6 +16,15 @@
 
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(tab-port) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
 
   &__background {
@@ -28,6 +37,11 @@
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 8;
     transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__nav {
     height: 100vh;
